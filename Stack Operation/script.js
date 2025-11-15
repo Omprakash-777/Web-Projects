@@ -10,7 +10,8 @@ function push() {
   stack.push(element);
   document.getElementById("message").innerText = `${element} pushed to stack`;
   document.getElementById("element").value = "";
-  // display();
+
+  display();
 }
 
 
@@ -32,6 +33,8 @@ function peek() {
   }
   let top = stack[stack.length - 1];
   document.getElementById("message").innerText = `Top element: ${top}`;
+
+  display();
 }
 
 
